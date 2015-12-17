@@ -2,7 +2,7 @@
 
 ## Try it
 
-Clone this repository
+Clone this repository.
 
 `npm run build`
 
