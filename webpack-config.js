@@ -4,7 +4,7 @@ var path = require("path");
 module.exports = {
 
     entry: {
-        "bundled-example": "./example.js",
+        "bundled-example": "./examples/example.js",
         "react-horizontal-menu": "./index.js"
     },
     output: {
