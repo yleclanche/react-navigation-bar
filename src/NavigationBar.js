@@ -45,8 +45,6 @@ export class NavigationBar extends Component {
 
     renderChildren() {
         return React.Children.map(this.props.children, (child) => {
-            console.log(child.props.id)
-            console.log("!!!" + this.props.selectedMenu)
             return React.cloneElement(child,
                 {...this.props,
                     mode: this.props.mode,
