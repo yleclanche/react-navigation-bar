@@ -12,7 +12,7 @@ export class Menu extends Component{
     click(e){
         if(this.props.mode==='click')
             this.props.openMenu(this.props.id)
-        let props = Object.assign({}, props, {menuId:this.props.id});
+        let props = Object.assign({}, this.props, {menuId:this.props.id});
         if(!(this.props.disabled))
             this.props.onSelect(props, e)
     }
@@ -23,7 +23,6 @@ export class Menu extends Component{
     }
 
     render(){
-        console.log(this.props.selected)
         let cssClasses = classNames(this.props.className, {
             active: this.props.selected,
             disabled: this.props.disabled
