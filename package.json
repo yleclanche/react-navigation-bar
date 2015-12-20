@@ -2,16 +2,23 @@
   "name": "react-navigation-bar",
   "version": "0.0.1",
   "description": "A simple React  navigation bar.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "webpack --config=webpack-config.js",
-    "watch": "webpack --config=webpack-config.js --watch"
+    "watch": "webpack --config=webpack-config.js --watch",
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile"
   },
   "keywords": [
     "React",
-    "dropdown",
-    "menu"
+    "navigation",
+    "menu",
+    "ui"
   ],
+  "dependencies": {
+    "classnames": "^2.2.1",
+    "react-addons-css-transition-group": "^0.14.3"
+  },
   "devDependencies": {
     "babel": "^5.4.7",
     "babel-core": "^5.4.7",
@@ -21,15 +28,11 @@
     "less": "^2.5.3",
     "less-loader": "^2.2.2",
     "react": "^0.14.0",
-    "react-addons-css-transition-group": "^0.14.3",
     "react-dom": "^0.14.0",
     "style-loader": "^0.12.4",
     "webpack": "^1.4.13",
     "webpack-dev-middleware": "^1.2.0"
   },
   "author": "Yoan Le Clanche",
-  "license": "ISC",
-  "dependencies": {
-    "classnames": "^2.2.1"
-  }
+  "license": "ISC"
 }

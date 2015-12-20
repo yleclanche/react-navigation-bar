@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom'
-import {NavigationBar, Menu, MenuItem} from '../src';
+import {NavigationBar, Menu, MenuItem} from '../lib';
 
 export class Container extends React.Component{
     constructor(props){
